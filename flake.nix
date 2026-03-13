@@ -13,7 +13,7 @@
       in
       {
         packages.default = pkgs.stdenv.mkDerivation {
-          pname = "claude-extras";
+          pname = "claude-hop";
           version = "0.1.0";
           src = ./.;
 
@@ -21,12 +21,12 @@
 
           buildPhase = ''
             export HOME=$TMPDIR
-            bun build src/cli.ts --compile --outfile claude-extras
+            bun build src/cli.ts --compile --outfile claude-hop
           '';
 
           installPhase = ''
             mkdir -p $out/bin
-            cp claude-extras $out/bin/
+            cp claude-hop $out/bin/
           '';
         };
 

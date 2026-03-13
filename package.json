@@ -1,15 +1,15 @@
 {
-  "name": "claude-extras",
+  "name": "claude-hop",
   "version": "0.1.0",
   "type": "module",
   "exports": {
     ".": "./src/lib/index.ts"
   },
   "bin": {
-    "claude-extras": "./src/cli.ts"
+    "claude-hop": "./src/cli.ts"
   },
   "scripts": {
-    "build": "bun build src/cli.ts --compile --outfile claude-extras"
+    "build": "bun build src/cli.ts --compile --outfile claude-hop"
   },
   "devDependencies": {
     "@types/bun": "latest"

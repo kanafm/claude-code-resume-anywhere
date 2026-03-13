@@ -160,14 +160,14 @@ async function main() {
   });
 
   if (values.help || (!values.fork && !values.resume && !values.import && !values.list)) {
-    console.log(`claude-extras — Cross-directory conversation management for Claude Code
+    console.log(`claude-hop — Cross-directory conversation management for Claude Code
 
 Usage:
-  claude-extras --fork [<id>]      Copy conversation to current project + resume
-  claude-extras --resume [<id>]    Symlink conversation to current project + resume
-  claude-extras --import <id>      Copy conversation to current project (no resume)
-  claude-extras --list [<id>]      List conversations (optionally filter by partial ID)
-  claude-extras --help             Show this help`);
+  claude-hop --fork [<id>]      Copy conversation to current project + resume
+  claude-hop --resume [<id>]    Symlink conversation to current project + resume
+  claude-hop --import <id>      Copy conversation to current project (no resume)
+  claude-hop --list [<id>]      List conversations (optionally filter by partial ID)
+  claude-hop --help             Show this help`);
     process.exit(values.help ? 0 : 1);
   }
 
