@@ -1,0 +1,17 @@
+{
+  "name": "claude-extras",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/lib/index.ts"
+  },
+  "bin": {
+    "claude-extras": "./src/cli.ts"
+  },
+  "scripts": {
+    "build": "bun build src/cli.ts --compile --outfile claude-extras"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
